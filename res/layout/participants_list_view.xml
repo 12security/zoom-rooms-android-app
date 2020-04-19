@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/participants_list_fragment_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="#ff000000" android:layout_gravity="center" android:id="@id/iv_participants_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/participants_number" />
+    <us.zoom.zrc.view.ParticipantListPtFrameLayout android:id="@id/lv_participants_parent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:listview_id="@id/rv_participants">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_participants" android:background="@color/participant_content_white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </us.zoom.zrc.view.ParticipantListPtFrameLayout>
+    <FrameLayout android:id="@id/ll_menu_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/zrc_text_color_light" android:gravity="center" android:id="@id/claim_host" android:padding="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/claim_host" android:layout_weight="1.0" />
+            <TextView android:textColor="@color/zrc_text_color_light" android:gravity="center" android:id="@id/show_audio_participant" android:padding="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/show_none_video_participant" android:layout_weight="1.0" />
+            <TextView android:textColor="@color/zrc_text_color_light" android:gravity="center" android:id="@id/hide_my_video" android:padding="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/hide_self_view" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_menu_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/zrc_text_color_light" android:gravity="center" android:id="@id/iv_mute_all" android:padding="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/mute_all" android:layout_weight="1.0" />
+            <TextView android:textColor="@color/zrc_text_color_light" android:gravity="center" android:id="@id/iv_unmute_all" android:padding="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/unmute_all" android:layout_weight="1.0" />
+            <TextView android:textColor="@color/zrc_text_color_light" android:gravity="center" android:id="@id/iv_more_list" android:padding="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/more" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

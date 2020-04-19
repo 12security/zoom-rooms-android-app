@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/participants_list_fragment_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/zm_pt_titlebar_height" zoom:zm_leftButton="@id/close_btn" zoom:zm_title="@id/txtTitle" style="@style/ZMTitleBar">
+        <us.zoom.zrc.view.ZRCImageView android:id="@id/close_btn" android:padding="12.0dip" android:layout_width="@dimen/accessibility_min_height" android:layout_height="@dimen/accessibility_min_height" android:src="@drawable/zm_btn_clear_search_view" android:scaleType="fitXY" />
+        <us.zoom.androidlib.widget.ZMDynTextSizeTextView android:textColor="#ff000000" android:ellipsize="end" android:gravity="center" android:id="@id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/meeting_information_title" android:singleLine="true" style="@style/ZMTextView.Title" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:background="@drawable/meeting_info_bg" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/panelTitleBar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_join_by_laptop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zrc_meeting_info_margin_left_right" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/zrc_meeting_info_margin_left_right">
+                <TextView android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" android:text="@string/join_by_laptop" style="@style/ZRCTextView.MeetingInfoSubTitle" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                    <TextView android:gravity="right" android:id="@id/textView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/go_to" android:layout_weight="1.0" style="@style/ZRCTextView.MeetingInfoLabel" />
+                    <TextView android:gravity="left" android:id="@id/join_url" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zrc_join_address" android:layout_weight="@dimen/meeting_info_view_layout_weight" style="@style/ZRCTextView.MeetingInfoMsg" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                    <TextView android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/meeting_id_in_meeting_info" android:layout_weight="1.0" style="@style/ZRCTextView.MeetingInfoLabel" />
+                    <TextView android:gravity="left" android:layout_gravity="bottom" android:id="@id/tv_meeting_id1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@dimen/meeting_info_view_layout_weight" style="@style/ZRCTextView.MeetingInfoMsg" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/layout_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                    <TextView android:gravity="right" android:id="@id/tv_password_key" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="1.0" style="@style/ZRCTextView.MeetingInfoLabel" />
+                    <TextView android:gravity="left" android:layout_gravity="bottom" android:id="@id/tv_password_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@dimen/meeting_info_view_layout_weight" style="@style/ZRCTextView.MeetingInfoMsg" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@id/v_line" android:background="@color/zrc_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/zrc_meeting_info_margin_left_right" android:layout_marginRight="@dimen/zrc_meeting_info_margin_left_right" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_join_by_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zrc_meeting_info_margin_left_right" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/zrc_meeting_info_margin_left_right">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" android:text="@string/join_by_phone" style="@style/ZRCTextView.MeetingInfoSubTitle" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                        <LinearLayout android:id="@id/sp_country_wrapper" android:padding="@dimen/zrc_default_enhance_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:id="@id/sp_country" android:layout_width="@dimen/country_flag_w_h" android:layout_height="@dimen/country_flag_w_h" android:scaleType="centerInside" android:contentDescription="@null" />
+                        </LinearLayout>
+                        <TextView android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/zrc_dial_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dial" style="@style/ZRCTextView.MeetingInfoLabel" />
+                    </LinearLayout>
+                    <us.zoom.zrc.view.ZRCExtensibleTextView android:gravity="left" android:id="@id/tv_dial" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@dimen/meeting_info_view_layout_weight" style="@style/ZRCTextView.MeetingInfoLabel" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_toll_free" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                    <TextView android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/toll_free" android:layout_weight="1.0" style="@style/ZRCTextView.MeetingInfoLabel" />
+                    <us.zoom.zrc.view.ZRCExtensibleTextView android:gravity="left" android:id="@id/tv_toll_free" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@dimen/meeting_info_view_layout_weight" style="@style/ZRCTextView.MeetingInfoLabel" />
+                </LinearLayout>
+            </LinearLayout>
+            <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_participant_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zrc_meeting_info_margin_left_right" android:layout_marginRight="@dimen/zrc_meeting_info_margin_left_right">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/meeting_id_in_meeting_info" android:layout_weight="1.0" style="@style/ZRCTextView.MeetingInfoLabel" />
+                    <TextView android:gravity="left" android:layout_gravity="bottom" android:id="@id/tv_meeting_id2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@dimen/meeting_info_view_layout_weight" style="@style/ZRCTextView.MeetingInfoMsg" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/zrc_meeting_info_margin_bottom">
+                    <TextView android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/paricipant_id" android:layout_weight="1.0" style="@style/ZRCTextView.MeetingInfoLabel" />
+                    <TextView android:gravity="left" android:layout_gravity="bottom" android:id="@id/tv_participant_id" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@dimen/meeting_info_view_layout_weight" style="@style/ZRCTextView.MeetingInfoMsg" />
+                </LinearLayout>
+            </LinearLayout>
+            <us.zoom.zrc.view.ZRCScrollListView android:id="@id/lv_tsp" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zrc_meeting_info_margin_left_right" android:layout_marginRight="@dimen/zrc_meeting_info_margin_left_right" android:layout_marginBottom="@dimen/zrc_meeting_info_margin_bottom" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

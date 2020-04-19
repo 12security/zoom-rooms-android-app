@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout" android:background="@drawable/far_end_camera_control_bg" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/user_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/ask_to_start_video_title" style="@style/ZRCTextView.Black" />
+        <View android:background="@color/zrc_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/user_cancel" android:background="@drawable/user_cancel_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="#ff1e90ff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/ask_to_start_video_cancel" />
+            </LinearLayout>
+            <View android:background="@color/zrc_gray" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:id="@id/user_confirm" android:background="@drawable/user_confirm_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="#ff1c86ee" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/ask_to_start_video_ok" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

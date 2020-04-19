@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <us.zoom.zrc.view.TriangleView android:id="@id/icon" android:layout_width="25.0dip" android:layout_height="15.0dip" app:TriangleViewBorderColor="@color/zrc_white" app:TriangleViewColor="@color/zrc_white" app:TriangleViewDirection="up" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/background_white_12dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="22.0sp" android:textColor="@color/zm_ui_kit_color_black_232333" android:gravity="center_vertical" android:id="@id/tv_title_transparent" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/callers" android:lineSpacingExtra="2.0sp" />
+        <View android:background="#ffededf4" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+    </LinearLayout>
+</LinearLayout>

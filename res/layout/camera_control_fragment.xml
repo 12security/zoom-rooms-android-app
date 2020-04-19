@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/camera_control_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0" android:minWidth="@dimen/zrc_dialog_min_width" android:minHeight="@dimen/zrc_dialog_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.1" layout="@layout/layout_camera_control_title_bar" />
+    <TextView android:textSize="@dimen/sc_sharing_hint_text_size" android:textColor="#ff458cff" android:gravity="center" android:id="@id/cameraControlSharingHintTV" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share_camera" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.8">
+        <us.zoom.zrc.camera_control.view.widgets.CameraControlPanelLayout android:id="@id/cameraControlPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" app:angle="90" app:color="#70000000" app:distance="3.0dip" app:shadow_radius="5.0dip" app:shadowed="true">
+            <include layout="@layout/layout_camera_control_without_preset" />
+        </us.zoom.zrc.camera_control.view.widgets.CameraControlPanelLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/pan_til_speed_percentage" android:layout_width="@dimen/pan_til_speed_percentage_width" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:textColor="@color/zm_black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pan_tilt_speed" />
+            <RelativeLayout android:id="@id/pan_til_speed_percentage_bar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <us.zoom.zrc.view.ZRCTextView android:textColor="@color/zm_black" android:id="@id/iv_volume_min" android:padding="@dimen/zrc_setting_menu_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pan_tilt_slow" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <us.zoom.zrc.view.ZRCTextView android:textColor="@color/zm_black" android:id="@id/iv_volume_max" android:padding="@dimen/zrc_setting_menu_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pan_tilt_fast" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <SeekBar android:id="@id/seekbar" android:padding="10.0dip" android:layout_width="280.0dip" android:layout_height="wrap_content" android:max="99" android:layout_toLeftOf="@id/iv_volume_max" android:layout_toRightOf="@id/iv_volume_min" android:layout_centerVertical="true" style="@style/ZRCSeekBar" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ViewStub android:id="@id/cameraPresetVS" android:layout="@layout/layout_camera_preset" android:inflatedId="@id/camPresetArea" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:id="@id/ccBottomLineView" android:background="@color/zm_text_disable_on_dark" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:minHeight="48.0dip" android:layout_weight="0.1">
+        <TextView android:textSize="@dimen/cam_ctrl_title_text_size" android:textColor="@color/selector_switch_camera_color_list" android:gravity="center" android:id="@id/cpSwitchCamTV" android:padding="@dimen/cp_clickable_view_common_padding" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/switch_camera" android:drawableLeft="@drawable/selector_switch_drawable" android:drawablePadding="4.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:drawableStart="@drawable/selector_switch_drawable" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/cpIntelligentZoomView" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/cpMirrorEffectView" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/cam_ctrl_title_text_size" android:textColor="@color/cp_normal_state_color" android:layout_gravity="center_vertical" android:padding="@dimen/cp_clickable_view_common_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/intelligent_zoom" />
+            <us.zoom.zrc.base.widget.ZRCSwitchButton android:theme="@style/Theme.AppCompat" android:gravity="center_vertical" android:id="@id/cpIntelligentZoomSwitch" android:layout_width="wrap_content" android:layout_height="fill_parent" app:switchMinWidth="30.0dip" style="@style/ZRCSwitchGrayTrack" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cpMirrorEffectView" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/cam_ctrl_title_text_size" android:textColor="@color/cp_normal_state_color" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cpMirrorEffectTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mirror_effect_for_my_video" />
+            <us.zoom.zrc.base.widget.ZRCSwitchButton android:theme="@style/Theme.AppCompat" android:gravity="center_vertical" android:id="@id/cpMirrorEffectSwitch" android:layout_width="wrap_content" android:layout_height="fill_parent" app:switchMinWidth="30.0dip" style="@style/ZRCSwitchGrayTrack" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

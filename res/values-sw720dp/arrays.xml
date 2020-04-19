@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="login_list_auto_size">
+        <item>520.0dip</item>
+        <item>800.0dip</item>
+    </array>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/zrc_setting_menu_item_fixed_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progressbar_volume" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="255" android:layout_centerVertical="true" style="@style/ZRCProgressBar.Horizontal" />
+    <us.zoom.zrc.base.widget.ZRCSeekBar android:id="@id/seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="255" android:progressDrawable="@color/transparent" android:layout_centerVertical="true" android:contentDescription="@string/microphone_volume_control" style="@style/ZRCBigThumbSeekBar" />
+</RelativeLayout>

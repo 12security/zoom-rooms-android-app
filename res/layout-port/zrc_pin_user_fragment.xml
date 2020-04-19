@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/webinar_fragment_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/ic_close" android:padding="@dimen/zrc_default_enhance_padding" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_close" android:scaleType="fitXY" android:contentDescription="@string/close" />
+        <TextView android:textSize="14.0sp" android:textStyle="normal" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/title" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="Select a screen to pin JinBiao Yin" android:singleLine="true" style="@style/ZMTextView.Large" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/pin_user_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:id="@id/blank_left" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.1" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/zrc_pin_user_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.8">
+                <RelativeLayout android:id="@id/zrc_screen_1_pin_layout" android:background="@drawable/zrc_pin_user_enable_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/zrc_screen_1_pin_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/pin_indicator1" android:contentDescription="1" />
+                        <TextView android:layout_gravity="center_vertical" android:id="@id/zrc_screen_1_pin_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Pinned" style="@style/ZMTextView.Small" />
+                    </LinearLayout>
+                    <TextView android:ellipsize="middle" android:id="@id/zrc_screen_1_pin_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="" android:singleLine="true" android:layout_centerInParent="true" style="@style/ZMTextView.Medium" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/zrc_screen_2_pin_layout" android:background="@drawable/zrc_pin_user_disable_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/zrc_screen_2_pin_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/pin_indicator1" android:contentDescription="2" />
+                        <TextView android:layout_gravity="center_vertical" android:id="@id/zrc_screen_2_pin_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Pinned" style="@style/ZMTextView.Small" />
+                    </LinearLayout>
+                    <TextView android:ellipsize="middle" android:id="@id/zrc_screen_2_pin_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="" android:singleLine="true" android:layout_centerInParent="true" style="@style/ZMTextView.Medium" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/zrc_screen_3_pin_layout" android:background="@drawable/zrc_pin_user_disable_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/zrc_screen_3_pin_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/pin_indicator1" android:contentDescription="3" />
+                        <TextView android:textSize="14.0sp" android:layout_gravity="center_vertical" android:id="@id/zrc_screen_3_pin_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Pinned" style="@style/ZMTextView.Small" />
+                    </LinearLayout>
+                    <TextView android:ellipsize="middle" android:id="@id/zrc_screen_3_pin_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="" android:singleLine="true" android:layout_centerInParent="true" style="@style/ZMTextView.Medium" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:id="@id/blank_right" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.2" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/zrc_rounded_corner_radius" />
+    <stroke android:width="@dimen/login_button_border_size" android:color="#26d7e9ff" />
+    <solid android:color="@android:color/transparent" />
+</shape>

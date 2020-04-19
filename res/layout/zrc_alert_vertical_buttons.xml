@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/buttonPane2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:divider="@drawable/zrc_alert_divider" android:showDividers="beginning|middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textStyle="bold" android:ellipsize="end" android:gravity="center" android:id="@id/button2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="48.0dip" android:minHeight="48.0dip" android:text="@string/sign_out" android:maxLines="2" style="@style/ZMButton.Dialog" />
+    <Button android:ellipsize="end" android:gravity="center" android:id="@id/button3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="48.0dip" android:minHeight="48.0dip" android:text="@string/sign_out_zrc_only" android:maxLines="2" style="@style/ZMButton.Dialog" />
+    <Button android:ellipsize="end" android:gravity="center" android:id="@id/button1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="48.0dip" android:minHeight="48.0dip" android:text="@string/cancel" android:maxLines="2" style="@style/ZMButton.Dialog" />
+</LinearLayout>

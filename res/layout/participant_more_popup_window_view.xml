@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <us.zoom.zrc.view.ParticipantMorePopup android:id="@id/list_pop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <us.zoom.zrc.view.TriangleView android:id="@id/iv_arrow" android:layout_width="25.0dip" android:layout_height="15.0dip" android:layout_below="@id/list_pop" android:layout_centerHorizontal="true" app:TriangleViewColor="#ffffffff" app:TriangleViewDirection="down" />
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/contact_list_content" android:background="#ff214569" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/panelSearchBar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <us.zoom.zrc.view.ZRCSearchView android:id="@id/edtSearch" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ImageButton android:id="@id/btnClearSearchView" android:background="@color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_btn_clear_search_view" android:scaleType="centerInside" android:minWidth="48.0dip" android:minHeight="48.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/cancel" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <FrameLayout android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/zm_addrbook_im_list_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/zm_addrbook_im_list" />
+            <us.zoom.zrc.view.DynamicIMContactListView android:id="@id/dynamic_zm_im_list" android:background="#ff214569" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="#ff506b85" android:dividerHeight="1.0dip" />
+            <ListView android:id="@id/searchlistview" android:background="#ff214569" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <us.zoom.zrc.view.DynamicImContactSearchListView android:id="@id/dynamic_searchlistview" android:background="#ff214569" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" />
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/parent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_above="@id/btm_layout" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <FrameLayout android:id="@id/selected_contact_list_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <us.zoom.zrc.view.MaxHeightListView android:layout_gravity="center_horizontal" android:id="@id/selectedjoinlist" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" app:swipeEnable="true" />
+                    <TextView android:layout_gravity="center_horizontal" android:id="@id/tv_no_one_invited" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_one_is_invited" style="@style/ZRCTextView.Mid" />
+                </FrameLayout>
+                <Button android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/zrc_black" android:layout_gravity="center_horizontal" android:id="@id/btn_meeting_now" android:background="@drawable/meeting_now_bg" android:layout_width="@dimen/zrc_meeting_now_button_width" android:layout_height="@dimen/zrc_meeting_now_button_height" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/meet_now" />
+            </LinearLayout>
+        </RelativeLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/btm_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tv_duration_layout" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/layout_call_room_system" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/ic_clock" android:layout_marginEnd="8.0dip" />
+                <TextView android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/tv_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zrc_meeting_duration" />
+                <us.zoom.zrc.view.TriangleView android:layout_width="20.0dip" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="5.0dip" android:layout_marginStart="3.0dip" app:TriangleViewColor="#ffffffff" app:TriangleViewRatio="0.66" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_call_room_system" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/tv_duration_layout" app:layout_constraintTop_toTopOf="parent">
+                <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/ic_keyboard" android:layout_marginEnd="8.0dip" />
+                <TextView android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/call_room_system" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</LinearLayout>

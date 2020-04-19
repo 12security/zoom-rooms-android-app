@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <us.zoom.zrc.view.ZRCImageView android:layout_gravity="center_vertical" android:id="@id/iv_volume_min" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/zrc_speaker_volume_decrease" android:scaleType="fitXY" android:contentDescription="@string/zrc_accessibility_decrease_speaker_volume" />
+        <us.zoom.zrc.base.widget.ZRCSeekBar android:layout_gravity="center_vertical" android:id="@id/seekbar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="255" android:layout_weight="1.0" android:contentDescription="@string/speaker_volume_control" style="@style/ZRCBigThumbSeekBar" />
+        <us.zoom.zrc.view.ZRCImageView android:layout_gravity="center_vertical" android:id="@id/iv_volume_max" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/zrc_speaker_volume_increase" android:scaleType="fitXY" android:contentDescription="@string/zrc_accessibility_increase_speaker_volume" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+    <us.zoom.zrc.view.ZRCTextView android:textSize="12.0sp" android:textColor="@color/zm_gray_1" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/speaker_volume_control_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

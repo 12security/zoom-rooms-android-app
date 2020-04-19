@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/cp_mirror_switch_track_h" />
+    <corners android:radius="@dimen/cp_mirror_switch_track_r" />
+    <gradient android:startColor="@color/cp_switch_view_on" android:endColor="@color/cp_switch_view_on" />
+</shape>

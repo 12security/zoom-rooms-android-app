@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="zm_lbl_folder_items">
+        <item quantity="other">%d Items</item>
+        <item quantity="zero">0 Item</item>
+        <item quantity="one">1 Item</item>
+    </plurals>
+</resources>

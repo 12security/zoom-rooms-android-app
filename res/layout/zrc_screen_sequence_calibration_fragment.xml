@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/zrc_screen_sequence_title_size" android:textColor="#ff3a3c3e" android:gravity="center" android:id="@id/zrc_screen_sequence_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:id="@id/zrc_screen_sequence_msg_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zrc_screen_sequence_msg_layout_margin_top" android:layout_below="@id/zrc_screen_sequence_title">
+            <TextView android:textSize="@dimen/zrc_screen_sequence_msg_size" android:textColor="#ff3a3c3e" android:id="@id/zrc_screen_sequence_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/display_arrangement_suggested_action" android:layout_centerHorizontal="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/zrc_screen_sequence_calibrate_msg_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/zrc_screen_sequence_msg_size" android:textColor="@color/zm_highlight" android:gravity="center" android:id="@id/zrc_screen_sequence_calibrate_finished_msg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/display_arrangement_confirm" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/zrc_screen_sequence_msg_size" android:textColor="@color/zm_highlight" android:gravity="center" android:id="@id/zrc_screen_sequence_calibrate_reset_msg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/display_arrangement_start_over" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/zrc_screen_tv_img_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zrc_screen_tv_img_layout_top" android:layout_below="@id/zrc_screen_sequence_msg_layout">
+            <RelativeLayout android:gravity="center" android:id="@id/zrc_screen_tv_left_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <FrameLayout android:id="@id/zrc_screen_tv_left_img_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:id="@id/zrc_screen_tv_left_img" android:layout_width="@dimen/zrc_screen_tv_img_width" android:layout_height="@dimen/zrc_screen_tv_img_height" android:src="@drawable/tv" android:scaleType="fitXY" android:contentDescription="@string/left" />
+                    <TextView android:textSize="@dimen/zrc_screen_tv_size" android:textColor="#ff919191" android:layout_gravity="center" android:id="@id/zrc_screen_tv_left_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/left" />
+                </FrameLayout>
+                <ImageView android:id="@id/zrc_screen_tv_shadow_left_img" android:layout_width="@dimen/zrc_screen_tv_shadow_width" android:layout_height="@dimen/zrc_screen_tv_shadow_height" android:layout_marginTop="30.0dip" android:src="@drawable/tv_shadow_far" android:scaleType="fitXY" android:layout_below="@id/zrc_screen_tv_left_img_layout" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/zrc_screen_tv_center_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <FrameLayout android:id="@id/zrc_screen_tv_center_img_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:id="@id/zrc_screen_tv_center_img" android:layout_width="@dimen/zrc_screen_tv_img_width" android:layout_height="@dimen/zrc_screen_tv_img_height" android:src="@drawable/tv" android:scaleType="fitXY" android:contentDescription="@string/center" />
+                    <TextView android:textSize="@dimen/zrc_screen_tv_size" android:textColor="#ff919191" android:layout_gravity="center" android:id="@id/zrc_screen_tv_center_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/center" />
+                </FrameLayout>
+                <ImageView android:id="@id/zrc_screen_tv_shadow_center_img" android:layout_width="@dimen/zrc_screen_tv_shadow_width" android:layout_height="@dimen/zrc_screen_tv_shadow_height" android:layout_marginTop="30.0dip" android:src="@drawable/tv_shadow_far" android:scaleType="fitXY" android:layout_below="@id/zrc_screen_tv_center_img_layout" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/zrc_screen_right_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <FrameLayout android:id="@id/zrc_screen_tv_right_img_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:id="@id/zrc_screen_tv_right_img" android:layout_width="@dimen/zrc_screen_tv_img_width" android:layout_height="@dimen/zrc_screen_tv_img_height" android:src="@drawable/tv" android:scaleType="fitXY" android:contentDescription="@string/right" />
+                    <TextView android:textSize="@dimen/zrc_screen_tv_size" android:textColor="#ff919191" android:layout_gravity="center" android:id="@id/zrc_screen_tv_right_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/right" />
+                </FrameLayout>
+                <ImageView android:id="@id/zrc_screen_tv_shadow_right_img" android:layout_width="@dimen/zrc_screen_tv_shadow_width" android:layout_height="@dimen/zrc_screen_tv_shadow_height" android:layout_marginTop="30.0dip" android:src="@drawable/tv_shadow_far" android:scaleType="fitXY" android:layout_below="@id/zrc_screen_tv_right_img_layout" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/zrc_screen_tv_exit_setup_size" android:textColor="@color/zm_highlight" android:id="@id/zrc_screen_tv_exit_setup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zrc_screen_tv_exit_setup_top" android:text="@string/display_arrangement_exit" android:layout_below="@id/zrc_screen_tv_img_layout" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

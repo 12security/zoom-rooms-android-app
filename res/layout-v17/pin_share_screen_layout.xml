@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.zoom.zrc.view.ZRCPinShareScreenView android:orientation="vertical" android:visibility="gone" android:layout_width="@dimen/multi_share_tv_bg" android:layout_height="wrap_content" android:layout_marginTop="@dimen/multi_share_tv_mag_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/tv" android:layout_width="fill_parent" android:layout_height="@dimen/multi_share_img_dp">
+        <us.zoom.zrc.view.ZRCTextViewButton android:id="@id/pin_share_audio_mute_unmute_btn" android:background="@drawable/audio_share_state_unmute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="48.0dip" android:minHeight="48.0dip" android:layout_centerInParent="true" android:scaleX="0.8" android:scaleY="0.8" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/zrc_white" android:id="@id/pin_share_screen_index_tv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pin_share_screen_view_index_margin_left" android:layout_marginTop="@dimen/pin_share_screen_view_index_margin_top" android:layout_marginStart="@dimen/pin_share_screen_view_index_margin_left" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/zrc_white" android:gravity="center" android:id="@id/pin_share_screen_index_mask" android:background="@drawable/tv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/pin_share_screen_content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <us.zoom.zrc.view.ZRCTextView android:textSize="18.0sp" android:textColor="@color/change_content_dialog_title_tv_color" android:gravity="center" android:id="@id/tv_why_can_not_pin_share_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/warning_message_margin_topbtm" android:layout_marginBottom="@dimen/warning_message_margin_topbtm" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_pin_share_source_list" android:background="@drawable/pin_share_source_rv_bg" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/multi_share_nameList_mg_Top" android:layout_marginBottom="@dimen/multi_share_nameList_mg_btom" />
+    </LinearLayout>
+</us.zoom.zrc.view.ZRCPinShareScreenView>

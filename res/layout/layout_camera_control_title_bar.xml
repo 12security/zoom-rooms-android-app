@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMDynTextSizeTextView android:textSize="@dimen/sc_sharing_hint_text_size" android:textStyle="bold" android:textColor="@color/zrc_black" android:ellipsize="end" android:gravity="center" android:id="@id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/camera_control" android:lines="1" android:layout_centerInParent="true" />
+    <us.zoom.zrc.view.ZRCTextViewButton android:textSize="@dimen/cam_ctrl_title_text_size" android:textStyle="bold" android:textColor="@color/zrc_blue" android:gravity="center" android:id="@id/cameraControlDoneTV" android:padding="@dimen/cam_ctrl_click_views_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="48.0dip" android:minHeight="48.0dip" android:text="@string/title_done" android:layout_alignParentRight="true" />
+</RelativeLayout>

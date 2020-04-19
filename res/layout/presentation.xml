@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/iv_share_laptop" android:layout_width="@dimen/zrc_pt_presentation_icon_width" android:layout_height="wrap_content" android:src="@drawable/share_laptop_bg" android:contentDescription="@string/share_navigation_laptop" />
+            <Button android:textSize="@dimen/zrc_pt_presentation_button_text_size" android:textColor="@drawable/zrc_share_btn_text_color" android:id="@id/btn_share_laptop" android:background="@drawable/zrc_share_content_btn_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zrc_pt_presentation_button_margin_top" android:minWidth="@dimen/zrc_pt_presentation_button_min_width" android:text="@string/share_navigation_laptop" android:contentDescription="@null" android:importantForAccessibility="no" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/iv_share_ios_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/iv_share_ios" android:layout_width="@dimen/zrc_pt_presentation_icon_width" android:layout_height="wrap_content" android:src="@drawable/share_ios_bg" android:contentDescription="@string/share_navigation_ios" />
+            <Button android:textSize="@dimen/zrc_pt_presentation_button_text_size" android:textColor="@drawable/zrc_share_btn_text_color" android:id="@id/btn_share_ios" android:background="@drawable/zrc_share_content_btn_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zrc_pt_presentation_button_margin_top" android:minWidth="@dimen/zrc_pt_presentation_button_min_width" android:text="@string/share_navigation_ios" android:contentDescription="@null" android:importantForAccessibility="no" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tv_duration_layout" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/tv_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zrc_meeting_duration_txt" />
+        <us.zoom.zrc.view.TriangleView android:layout_width="20.0dip" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="5.0dip" app:TriangleViewColor="#ffffffff" app:TriangleViewRatio="0.66" />
+    </LinearLayout>
+</RelativeLayout>

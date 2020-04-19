@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/zrc_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="@dimen/zrc_dialog_min_width" android:minHeight="@dimen/zrc_dialog_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" android:background="#ffe8e8e8" android:layout_width="fill_parent" android:layout_height="@dimen/zm_pt_titlebar_height" zoom:zm_rightButton="@id/btnRight" zoom:zm_title="@id/txtTitle" style="@style/ZMTitleBar">
+        <us.zoom.androidlib.widget.ZMDynTextSizeTextView android:textSize="14.0sp" android:textColor="#ff0e293f" android:ellipsize="end" android:gravity="center" android:id="@id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite_by_email" android:singleLine="true" style="@style/ZMTextView.Title" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/zrc_text_color" android:id="@id/btnRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" style="@style/ZRCTextView.Normal" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/zrc_gray2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/to" />
+        <EditText android:textSize="12.0sp" android:id="@id/et_to" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" android:imeOptions="flagNoFullscreen" style="@style/ZRCEditText.SendEmail" />
+    </LinearLayout>
+    <View android:background="@color/zrc_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/zrc_gray2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/subject" />
+        <EditText android:textSize="12.0sp" android:id="@id/et_subject" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:imeOptions="flagNoFullscreen" style="@style/ZRCEditText.SendEmail" />
+    </LinearLayout>
+    <View android:background="@color/zrc_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" />
+    <EditText android:textSize="12.0sp" android:gravity="center|left|top" android:id="@id/et_content" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:inputType="textMultiLine" android:imeOptions="flagNoFullscreen" style="@style/ZRCEditText.SendEmail" />
+</LinearLayout>

@@ -1,0 +1,67 @@
+.class final Lus/zoom/zrc/login/LoginActivity$2;
+.super Lus/zoom/zrc/base/util/ZRCForegroundTask;
+.source "LoginActivity.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lus/zoom/zrc/login/LoginActivity;->showZoomRoomLoggedIn(Landroid/content/Context;I)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lus/zoom/zrc/base/util/ZRCForegroundTask<",
+        "Lus/zoom/zrc/login/LoginActivity;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic val$result:I
+
+
+# direct methods
+.method constructor <init>(I)V
+    .locals 0
+
+    .line 91
+    iput p1, p0, Lus/zoom/zrc/login/LoginActivity$2;->val$result:I
+
+    invoke-direct {p0}, Lus/zoom/zrc/base/util/ZRCForegroundTask;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic run(Lus/zoom/zrc/ZRCActivity;)V
+    .locals 0
+
+    .line 91
+    check-cast p1, Lus/zoom/zrc/login/LoginActivity;
+
+    invoke-virtual {p0, p1}, Lus/zoom/zrc/login/LoginActivity$2;->run(Lus/zoom/zrc/login/LoginActivity;)V
+
+    return-void
+.end method
+
+.method public run(Lus/zoom/zrc/login/LoginActivity;)V
+    .locals 1
+
+    .line 94
+    invoke-virtual {p1}, Lus/zoom/zrc/login/LoginActivity;->getPresenter()Lus/zoom/zrc/login/LoginContract$IPresenter;
+
+    move-result-object p1
+
+    iget v0, p0, Lus/zoom/zrc/login/LoginActivity$2;->val$result:I
+
+    invoke-interface {p1, v0}, Lus/zoom/zrc/login/LoginContract$IPresenter;->handleZoomRoomLoggedIn(I)V
+
+    return-void
+.end method

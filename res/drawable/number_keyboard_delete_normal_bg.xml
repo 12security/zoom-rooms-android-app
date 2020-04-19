@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/join_meeting_backspace_drawable">
+        <bitmap android:gravity="center_horizontal" android:src="@drawable/backspace" />
+    </item>
+    <item android:id="@id/join_meeting_backspace_drawable" android:drawable="@drawable/number_keyboard_number_bg" />
+</layer-list>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/zrc_settings_menu" android:padding="@dimen/zrc_number_keyboard_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zoom_meeting_id_label" />
+    <TextView android:textSize="@dimen/zrc_number_keyboard_input_font_size" android:gravity="end" android:id="@id/tv_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="30.0dip" />
+    <View android:background="@color/zrc_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="40.0dip" />
+    <GridView android:id="@id/gv_number_keyboard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:horizontalSpacing="4.0dip" android:verticalSpacing="15.0dip" android:numColumns="3" />
+</LinearLayout>

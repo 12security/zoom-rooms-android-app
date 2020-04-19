@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <us.zoom.zrc.view.ZRCTextViewButton android:textColor="@color/multi_share_item_unchecked" android:gravity="center" android:id="@id/language_list_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+    <us.zoom.zrc.view.ZRCImageView android:id="@id/current_language_check_mark" android:background="@drawable/multi_share_sharing_check" android:visibility="visible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/selected" />
+</RelativeLayout>

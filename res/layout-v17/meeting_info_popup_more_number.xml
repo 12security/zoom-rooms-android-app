@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="false" android:showDividers="none"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/more_text" android:background="@drawable/meeting_info_popup_more_number_bg" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="10" style="@style/ZRCTextView.MeetingInfoLabel" />
+    <us.zoom.zrc.view.TriangleView android:id="@id/iv_arrow" android:layout_width="25.0dip" android:layout_height="15.0dip" android:layout_marginLeft="15.0dip" android:layout_marginStart="15.0dip" app:TriangleViewBorderColor="#ffe2e2e2" app:TriangleViewColor="#ffe2e2e2" app:TriangleViewDirection="down" />
+</LinearLayout>

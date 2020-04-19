@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="zrp_reserve_button_height">60.0dip</dimen>
+    <dimen name="zrp_reserve_button_width">260.0dip</dimen>
+    <dimen name="zrp_reserve_invitee_name_text_size">18.0sp</dimen>
+    <dimen name="zrp_reserve_meeting_name_edit">20.0sp</dimen>
+    <dimen name="zrp_reserve_meeting_time_text_size">26.0sp</dimen>
+</resources>

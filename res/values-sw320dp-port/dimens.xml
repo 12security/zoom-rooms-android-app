@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="arrow_padding_1">10.0dip</dimen>
+    <dimen name="arrow_padding_2">4.0dip</dimen>
+    <dimen name="sc_cam_name_tv_maxwith">130.0dip</dimen>
+    <dimen name="thumbnail_min_video_high">18.0dip</dimen>
+    <dimen name="thumbnail_min_video_with">25.0dip</dimen>
+    <dimen name="common_camera_panel_margin_bottom">40.0dip</dimen>
+    <dimen name="common_camera_panel_margin_top">40.0dip</dimen>
+</resources>

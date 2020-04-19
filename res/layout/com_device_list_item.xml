@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/zrc_setting_menu_item_fixed_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/item_name" android:padding="@dimen/zrc_setting_menu_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/com_device_list_marginLeft" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:textSize="18.0dip" android:textColor="#ff0e293f" android:ellipsize="end" android:gravity="left" android:id="@id/tv_friendly_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ssss" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_selected" android:padding="@dimen/zrc_setting_menu_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/com_device_list_marginRight" android:src="@drawable/tick" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:background="@color/zrc_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

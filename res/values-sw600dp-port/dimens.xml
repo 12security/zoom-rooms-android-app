@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_license_key_box_margin_top">32.0dip</dimen>
+    <dimen name="login_license_keyboard_key_size">86.0dip</dimen>
+    <dimen name="login_title_margin_top">40.0dip</dimen>
+    <dimen name="zrp_panel_horizontal_padding">36.0dip</dimen>
+    <dimen name="zrp_panel_status_view_horizontal_padding">60.0dip</dimen>
+    <dimen name="zrp_reserve_button_height">56.0dip</dimen>
+    <dimen name="zrp_reserve_button_width">220.0dip</dimen>
+    <dimen name="zrp_reserve_invitee_name_text_size">16.0sp</dimen>
+    <dimen name="zrp_reserve_meeting_name_edit">18.0sp</dimen>
+    <dimen name="zrp_reserve_meeting_time_text_size">22.0sp</dimen>
+</resources>

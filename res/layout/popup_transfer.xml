@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background_white_12dp" android:layout_width="@dimen/transfer_popup_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_warm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/warm_transfer" style="@style/PhoneTransferTitle" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/speak_to_the_new_agent_before_transferring" style="@style/PhoneTransferDescription" />
+    </LinearLayout>
+    <View android:id="@id/separator_blind_transfer" android:background="#ffededf4" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_blind" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/blind_transfer" style="@style/PhoneTransferTitle" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transfer_without_speaking_to_the_new_agent" style="@style/PhoneTransferDescription" />
+    </LinearLayout>
+    <View android:id="@id/separator_voicemail" android:background="#ffededf4" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_voicemail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transfer_to_voicemail" style="@style/PhoneTransferTitle" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transfer_directly_to_the_new_agent_s_voicemail" style="@style/PhoneTransferDescription" />
+    </LinearLayout>
+</LinearLayout>

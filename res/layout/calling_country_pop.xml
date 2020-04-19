@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/zrc_meeting_country_popup_window_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <us.zoom.zrc.view.TriangleView android:id="@id/icon" android:layout_width="25.0dip" android:layout_height="15.0dip" app:TriangleViewBorderColor="#ffe2e2e2" app:TriangleViewColor="#ffe2e2e2" app:TriangleViewDirection="up" />
+    <us.zoom.zrc.base.widget.RoundedListView android:id="@id/list" android:background="@drawable/participants_list_fragment_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="#ffd3d3d3" android:dividerHeight="1.0dip" app:cornerRadius="20.0dip" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="@dimen/sc_sharing_cam_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sc_select_icon_iv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:src="@drawable/icon_polling_selected" android:contentDescription="@string/selected" android:layout_marginStart="60.0dip" />
+    <TextView android:textSize="@dimen/sc_sharing_cam_item_text_size" android:textColor="#ff535366" android:id="@id/sc_cam_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginStart="20.0dip" />
+</LinearLayout>

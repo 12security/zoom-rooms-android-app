@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ChatDialog">
+        <item name="android:background">@color/zrc_white</item>
+    </style>
+    <style name="Keypad.Dark" parent="@style/Keypad">
+        <item name="android:textColorPrimary">@color/zrc_white</item>
+        <item name="android:verticalSpacing">@dimen/zrc_number_keyboard_vertical_spacing</item>
+        <item name="keypadItemBackground">@drawable/login_bg_license_key</item>
+    </style>
+    <style name="Keypad.Light" parent="@style/Keypad">
+        <item name="android:textColorPrimary">@color/phone_dial_keyboard_dark</item>
+        <item name="android:verticalSpacing">@dimen/zrc_number_keyboard_vertical_spacing</item>
+        <item name="keypadItemBackground">@drawable/dial_keyboard_bg_dark</item>
+    </style>
+    <style name="ParticipantListItem.AvatarView" parent="@style/ParticipantListItem">
+        <item name="android:layout_width">30.0dip</item>
+        <item name="android:layout_height">30.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+    <style name="ParticipantListItem.StateIcon" parent="@style/ParticipantListItem">
+        <item name="android:layout_width">20.0dip</item>
+        <item name="android:layout_height">20.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="ParticipantListItem.TvName" parent="@style/ZRCTextView.Black">
+        <item name="android:textSize">12.0sp</item>
+    </style>
+    <style name="ParticipantListItem.TvSpotlight" parent="@style/ParticipantListItem">
+        <item name="android:textSize">12.0sp</item>
+    </style>
+    <style name="ParticipantListItem.TvSubName" parent="@style/ZRCTextView.Gray">
+        <item name="android:textSize">12.0sp</item>
+    </style>
+    <style name="Settings.PreMeeting.ItemLayout" parent="@style/Settings.PreMeeting">
+        <item name="android:layout_height">@dimen/zrc_setting_meeting_item_fixed_height</item>
+    </style>
+    <style name="VirtualDeviceDialog">
+        <item name="android:background">@color/zrc_white</item>
+    </style>
+    <style name="ZRCRoomName">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="ZRCTextView.Mid" parent="@style/ZRCTextView">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+    <style name="ZRCTheme.CallRoomSystem.InviteInMeeting" parent="@style/ZRCTheme.CallRoomSystem.Light">
+        <item name="keypadStyle">@style/Keypad.Light.RoomSystem</item>
+    </style>
+    <style name="ZRCTheme.ControlSystem.InMeeting" parent="@style/ControlSystem.InMeeting">
+        <item name="controlSystemDeviceBackground">@null</item>
+        <item name="controlSystemDeviceHeadBottomLineColor">@color/zrcs_line_in_meeting</item>
+        <item name="controlSystemDeviceListDividerColor">@color/zrcs_line_in_meeting_transparent</item>
+        <item name="controlSystemDeviceListStyle">@style/ControlSystem.InMeeting.DeviceList</item>
+        <item name="controlSystemErrorColor">@color/zrcs_gray_blue</item>
+        <item name="controlSystemImageParamBackground">@drawable/control_system_image_param_background_in</item>
+        <item name="controlSystemMainStyle">@style/ControlSystem.InMeeting.MainPort</item>
+        <item name="controlSystemNameColor">@color/zrcs_black</item>
+        <item name="controlSystemParamColor">@color/control_system_param_color_in_meeting</item>
+        <item name="controlSystemTextParamBackground">@drawable/control_system_text_param_background_in</item>
+        <item name="controlSystemTitleTextStyle">@style/ControlSystem.InMeeting.Title</item>
+    </style>
+    <style name="ZRCTheme.ControlSystem.PreMeeting" parent="@style/ControlSystem.PreMeeting">
+        <item name="controlSystemDeviceBackground">@null</item>
+        <item name="controlSystemDeviceHeadBottomLineColor">@color/zrcs_line_pre_meeting</item>
+        <item name="controlSystemDeviceListDividerColor">@color/zrcs_black_transparent</item>
+        <item name="controlSystemDeviceListStyle">@style/ControlSystem.InMeeting.DeviceList</item>
+        <item name="controlSystemErrorColor">@color/zrc_white</item>
+        <item name="controlSystemImageParamBackground">@drawable/control_system_image_param_background_pre_port</item>
+        <item name="controlSystemMainStyle">@style/ControlSystem.PreMeeting.MainPort</item>
+        <item name="controlSystemNameColor">@color/zrc_white</item>
+        <item name="controlSystemParamColor">@color/control_system_param_color_pre_meeting</item>
+        <item name="controlSystemTextParamBackground">@drawable/control_system_text_param_background_pre_port</item>
+        <item name="controlSystemTitleTextStyle">@style/ControlSystem.PreMeeting.TitlePort</item>
+    </style>
+    <style name="ZRCTheme.DialFragment.Light" parent="@style/ZRCTheme.DialFragment">
+        <item name="android:textColorPrimary">@color/phone_dial_keyboard_dark</item>
+        <item name="android:windowBackground">@color/zrc_gray</item>
+        <item name="keypadStyle">@style/Keypad.Light</item>
+    </style>
+    <style name="ZRCTheme.Entrance" parent="@style/ZRCTheme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="ZRCTheme.Settings.InMeeting" parent="@style/ZRCTheme.Settings.PreMeeting" />
+    <style name="ZRCTheme.Settings.PreMeeting" parent="@style/Settings.PreMeeting">
+        <item name="settingsBackStyle">@style/ZRCPortrait.Back</item>
+        <item name="settingsCategoryDevicesStyle">@style/ZRCSettingCategory.Microphone</item>
+        <item name="settingsCategoryStyle">@style/ZRCSettingCategory</item>
+        <item name="settingsContentListViewStyle">@style/Settings.PreMeeting.ContentListView</item>
+        <item name="settingsItemLayoutStyle">@style/Settings.PreMeeting.ItemLayout</item>
+        <item name="settingsMainStyle">@style/Settings.PreMeeting.Main.Port</item>
+        <item name="settingsMenuValueStyle">@null</item>
+        <item name="settingsPrimaryColor">@color/zrc_white</item>
+        <item name="settingsSecondaryColor">@color/zrc_gray3</item>
+        <item name="settingsSubTitleColor">@color/zrc_white</item>
+        <item name="settingsTextColorPrimary">@color/setting_title_color_trio</item>
+        <item name="settingsTitleBackgroundColor">@color/transparent</item>
+        <item name="settingsTitleDividerColor">@color/zrc_gray</item>
+    </style>
+</resources>

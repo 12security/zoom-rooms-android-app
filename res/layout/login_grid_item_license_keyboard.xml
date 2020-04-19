@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <us.zoom.zrc.view.ZRCTextView android:textSize="@dimen/login_license_keyboard_text_size" android:textColor="@color/login_text_color_white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_label" android:background="@drawable/login_bg_license_key" android:layout_width="@dimen/login_license_keyboard_key_size" android:layout_height="@dimen/login_license_keyboard_key_size" />
+    <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/iv_delete" android:background="@drawable/login_bg_license_key" android:visibility="invisible" android:layout_width="@dimen/login_license_keyboard_key_size" android:layout_height="@dimen/login_license_keyboard_key_size" android:scaleType="centerInside" android:contentDescription="@null" />
+    <TextView android:textSize="@dimen/login_license_keyboard_name_text_size" android:textColor="#ccd7e9ff" android:id="@id/tv_sub_name" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_license_keyboard_key_name_padding" android:layout_below="@id/tv_label" android:layout_centerHorizontal="true" />
+</RelativeLayout>

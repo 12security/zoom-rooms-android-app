@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/zrp_select_floor_location_popup_background" />
+    <corners android:radius="@dimen/select_floor_popup_bg_corners" />
+</shape>

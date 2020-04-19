@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.zoom.zrc.base.widget.ZRCDialogRootLayout android:orientation="vertical" android:id="@id/dialog_root_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cornerRadius="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/topPanel" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/alertTitle" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ZMTextView.Large.DialogTitle" />
+        <TextView android:gravity="bottom" android:id="@id/alertOptionTitle" android:background="@color/zm_dialog_option_titlebg" android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/ZMTextView.OptionTitle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/customTopPanel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/contentPanel" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ScrollView android:id="@id/scrollView" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" android:overScrollMode="ifContentScrolls">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/alertIcon" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:gravity="center" android:id="@id/alertdialogmsg" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ZMTextView.Normal.DialogMsg" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <us.zoom.zrc.base.widget.RoundedFrameLayout android:id="@id/customPanel" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" app:cornerRadius="10.0dip">
+        <FrameLayout android:id="@id/customView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </us.zoom.zrc.base.widget.RoundedFrameLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/customPanelBottomGap" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+        <ViewStub android:id="@id/buttonPanel_horizontal" android:layout="@layout/zrc_alert_horizontal_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/customPanelBottomGap" />
+        <ViewStub android:id="@id/buttonPanel_vertical" android:layout="@layout/zrc_alert_vertical_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/customPanelBottomGap" />
+    </RelativeLayout>
+</us.zoom.zrc.base.widget.ZRCDialogRootLayout>

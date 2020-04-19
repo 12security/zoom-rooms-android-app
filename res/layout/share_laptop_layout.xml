@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/share_zoom_client_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/share_app_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="?shareContentTitleTextColor" android:id="@id/share_zoom_client_top_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/share_laptop_title_mag" android:text="@string/share_desktop_title" style="@style/ZRCTextView.ShareSmall" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                    <TextView android:textColor="?shareContentContentTextColor" android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zrc_share_content_word_margin" android:text="@string/share_desktop_item1" android:layout_weight="1.0" style="@style/ZRCTextView.ShareNormal" />
+                    <TextView android:textColor="?shareContentContentTextColor" android:gravity="left" android:id="@id/tv_share_screen" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/share_desktop_item1_highlight" android:layout_weight="1.8" style="@style/ZRCTextView.ShareMid" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/share_zoom_client_sharing_key_view" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="?shareContentContentTextColor" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/tv_share_zoom_client_sharing_key_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zrc_share_content_word_margin" android:text="@string/share_desktop_item3" android:layout_weight="1.0" style="@style/ZRCTextView.ShareNormal" />
+                    <TextView android:textColor="?shareContentContentTextColor" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/tv_share_zoom_client_sharing_key_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.8" style="@style/ZRCTextView.ShareMid" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/share_zoom_client_meeting_id_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="?shareContentContentTextColor" android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zrc_share_content_word_margin" android:text="@string/share_browser_item2" android:layout_weight="1.0" style="@style/ZRCTextView.ShareNormal" />
+                    <TextView android:textColor="?shareContentContentTextColor" android:gravity="left" android:id="@id/tv_share_zoom_client_meeting_id_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.8" style="@style/ZRCTextView.ShareMid" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tv_share_zoom_client_sharing_password_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <TextView android:textColor="?shareContentContentTextColor" android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zrc_share_content_word_margin" android:text="@string/share_browser_item3" android:layout_weight="1.0" style="@style/ZRCTextView.ShareNormal" />
+                    <TextView android:textColor="?shareContentContentTextColor" android:gravity="left" android:id="@id/tv_share_zoom_client_sharing_password_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.8" style="@style/ZRCTextView.ShareMid" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="?shareContentDividerColor" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/share_content_divider_margin" android:layout_marginBottom="@dimen/share_content_divider_margin" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/share_browser_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="?shareContentTitleTextColor" android:id="@id/use_browser_top_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/share_laptop_title_mag" android:text="@string/share_browser_title" style="@style/ZRCTextView.ShareSmall" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                <TextView android:textColor="?shareContentContentTextColor" android:gravity="right" android:id="@id/tv_share_browser_go_to_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zrc_share_content_word_margin" android:text="@string/share_browser_item1" android:layout_weight="1.0" style="@style/ZRCTextView.ShareNormal" />
+                <TextView android:textColor="?shareContentContentTextColor" android:gravity="left" android:id="@id/tv_share_url" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zrc_share_url" android:layout_weight="1.8" style="@style/ZRCTextView.ShareMid" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="?shareContentContentTextColor" android:gravity="right" android:id="@id/tv_share_browser_meeting_id_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zrc_share_content_word_margin" android:text="@string/share_browser_item2" android:layout_weight="1.0" style="@style/ZRCTextView.ShareNormal" />
+                <TextView android:textColor="?shareContentContentTextColor" android:gravity="left" android:id="@id/tv_share_browser_meeting_id_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.8" style="@style/ZRCTextView.ShareMid" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/share_browser_sharing_password_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <TextView android:textColor="?shareContentContentTextColor" android:gravity="right" android:id="@id/tv_share_browser_sharing_password_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zrc_share_content_word_margin" android:text="@string/share_browser_item3" android:layout_weight="1.0" style="@style/ZRCTextView.ShareNormal" />
+                <TextView android:textColor="?shareContentContentTextColor" android:gravity="left" android:id="@id/tv_share_browser_sharing_password_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.8" style="@style/ZRCTextView.ShareMid" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_share_hdmi_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/share_hdmi_divider" android:background="?shareContentDividerColor" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/share_content_divider_margin" android:layout_marginBottom="@dimen/share_content_divider_margin" />
+            <LinearLayout android:orientation="vertical" android:id="@id/share_hdmi_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="?shareContentTitleTextColor" android:ellipsize="end" android:id="@id/tv_use_hdmi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/share_laptop_use_hdmi_mag" android:text="@string/share_hdmi_title" android:maxLines="1" style="@style/ZRCTextView.ShareSmall" />
+                    <TextView android:textSize="?shareContentSecondaryTextSize" android:textStyle="bold" android:textColor="#ff00a832" android:layout_gravity="center" android:id="@id/tv_currently_in_sharing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/share_hdmi_sharing" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_start_sharing_hdmi_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <us.zoom.zrc.base.widget.ZRCButton android:textSize="@dimen/sc_footer_control_stop_text_size" android:textColor="@color/zrc_black" android:layout_gravity="center_horizontal" android:id="@id/btn_start_sharing_hdmi" android:background="@drawable/zrc_share_hdmi_btn" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/sc_footer_control_stop_btn_w" android:minHeight="@dimen/sc_footer_control_stop_btn_h" android:text="@string/turn_on_sharing" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

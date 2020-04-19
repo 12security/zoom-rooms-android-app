@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.zoom.zrc.base.widget.CheckableRelativeLayout android:background="@drawable/meeting_list_select_bg" android:padding="@dimen/zrc_pt_meeting_list_item_padding_all" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/meeting_list_type_zoom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:src="@drawable/meeting_list_type_zoom" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/meeting_list_type_zoom" android:layout_alignParentLeft="true">
+        <TextView android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50.0dip" style="@style/ZRCTextView.MeetingListTitle" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:singleLine="true" style="@style/ZRCTextView.MeetingListTitle" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip">
+                <TextView android:gravity="right" android:id="@id/tv_morning_or_afternoon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:minWidth="50.0dip" style="@style/ZRCTextView.MeetingListTitle" />
+                <TextView android:textStyle="bold|italic" android:id="@id/tv_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/zrc_id" style="@style/ZRCTextView.MeetingListTitle" />
+                <TextView android:textStyle="bold|italic" android:id="@id/tv_meeting_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/ZRCTextView.MeetingListTitle" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</us.zoom.zrc.base.widget.CheckableRelativeLayout>

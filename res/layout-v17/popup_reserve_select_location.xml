@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <us.zoom.zrc.view.TriangleView android:layout_gravity="center_horizontal" android:id="@id/v_select_location_window_triangle" android:layout_width="24.0dip" android:layout_height="12.0dip" app:TriangleViewBorderColor="@color/zrp_select_floor_location_popup_background" app:TriangleViewColor="@color/zrp_select_floor_location_popup_background" app:TriangleViewDirection="up" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_select_floor_popup_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <us.zoom.zrc.view.ZRCLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_reserve_select_location_title_bar" android:layout_width="wrap_content" android:layout_height="@dimen/zrp_reserve_select_location_title_height">
+            <us.zoom.zrc.view.ZRCImageViewButton android:id="@id/iv_reserve_select_location_back" android:padding="12.0dip" android:layout_width="@dimen/select_floor_back_button_size" android:layout_height="@dimen/select_floor_back_button_size" android:src="@drawable/zrp_reserve_select_location_back" android:scaleType="centerInside" android:contentDescription="@string/back" />
+            <us.zoom.zrc.view.ZRCTextView android:textSize="16.0sp" android:textColor="@color/zrp_reserve_common_text_color" android:ellipsize="end" android:id="@id/tv_reserve_select_location_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zrp_reserve_select_location_item_right_margin" android:singleLine="true" android:layout_marginEnd="@dimen/zrp_reserve_select_location_item_right_margin" />
+        </us.zoom.zrc.view.ZRCLinearLayout>
+        <View android:background="@color/zrp_reserve_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <us.zoom.zrc.view.FixedRowsRecyclerView android:id="@id/rv_reserve_select_location_list" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:maxRows="8" />
+    </LinearLayout>
+</LinearLayout>

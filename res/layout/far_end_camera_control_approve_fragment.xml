@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout" android:background="@drawable/far_end_camera_control_bg" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="18.0sp" android:textColor="@color/zrc_black" android:gravity="center" android:id="@id/txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:text="@string/user_accepted_camera_control" />
+        <View android:background="@color/zrc_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <Button android:textSize="16.0sp" android:textColor="@color/zrc_blue" android:id="@id/Later" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/later" android:layout_weight="1.0" />
+            <View android:background="@color/zrc_gray" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <Button android:textSize="16.0sp" android:textColor="@color/zrc_blue" android:id="@id/Now" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/now" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

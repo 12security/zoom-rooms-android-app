@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="arrow_padding_1">25.0dip</dimen>
+    <dimen name="arrow_padding_2">10.0dip</dimen>
+    <dimen name="join_meeting_input_width">280.0dip</dimen>
+    <dimen name="join_meeting_keyboard_horizontal_divider">32.0dip</dimen>
+    <dimen name="join_meeting_keyboard_vertical_divider">28.0dip</dimen>
+    <dimen name="login_license_keyboard_horizontal_divider">32.0dip</dimen>
+    <dimen name="login_license_keyboard_key_name_padding">8.0dip</dimen>
+    <dimen name="login_license_keyboard_key_size">72.0dip</dimen>
+    <dimen name="login_license_keyboard_vertical_divider">28.0dip</dimen>
+    <dimen name="login_secondary_content_width">320.0dip</dimen>
+    <dimen name="sc_cam_name_tv_maxwith">230.0dip</dimen>
+    <dimen name="thumbnail_min_video_high">23.0dip</dimen>
+    <dimen name="thumbnail_min_video_with">35.0dip</dimen>
+</resources>

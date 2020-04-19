@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/webinar_fragment_bg" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.3">
+        <TextView android:textSize="@dimen/meeting_feedback_main_title" android:textColor="#ff000000" android:gravity="center_horizontal" android:id="@id/tv_simple_feedback_title" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/rating_instruction" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/ZMTextView.Large" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <us.zoom.zrc.view.ZRCImageView android:id="@id/thumb_up_id" android:layout_width="@dimen/meeting_feedback_main_img_btn" android:layout_height="@dimen/meeting_feedback_main_img_btn" android:src="@drawable/thumb_up_big" android:scaleType="fitXY" android:layout_centerVertical="true" android:contentDescription="@string/audio_checkup_result_good" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.2" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <us.zoom.zrc.view.ZRCImageView android:id="@id/thumb_down_id" android:layout_width="@dimen/meeting_feedback_main_img_btn" android:layout_height="@dimen/meeting_feedback_main_img_btn" android:src="@drawable/thumb_down_big" android:scaleType="fitXY" android:layout_centerVertical="true" android:contentDescription="@string/audio_checkup_result_bad" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.2">
+        <us.zoom.zrc.view.ZRCTextViewButton android:textSize="@dimen/meeting_feedback_main_ignore" android:textColor="@color/feedback_txt_bg" android:gravity="center" android:id="@id/feedback_not_my_meeting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/feedback_not_my_meeting" android:layout_centerInParent="true" style="@style/ZMTextView.Medium" />
+    </RelativeLayout>
+</LinearLayout>

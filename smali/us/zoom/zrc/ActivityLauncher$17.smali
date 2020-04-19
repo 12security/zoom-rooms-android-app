@@ -1,0 +1,71 @@
+.class Lus/zoom/zrc/ActivityLauncher$17;
+.super Lus/zoom/zrc/base/notification/INotification;
+.source "ActivityLauncher.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lus/zoom/zrc/ActivityLauncher;->setup()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lus/zoom/zrc/ActivityLauncher;
+
+
+# direct methods
+.method constructor <init>(Lus/zoom/zrc/ActivityLauncher;)V
+    .locals 0
+
+    .line 164
+    iput-object p1, p0, Lus/zoom/zrc/ActivityLauncher$17;->this$0:Lus/zoom/zrc/ActivityLauncher;
+
+    invoke-direct {p0}, Lus/zoom/zrc/base/notification/INotification;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onNotification(Ljava/lang/Object;)V
+    .locals 3
+
+    .line 167
+    check-cast p1, Lcom/google/common/collect/ImmutableMap;
+
+    .line 168
+    iget-object v0, p0, Lus/zoom/zrc/ActivityLauncher$17;->this$0:Lus/zoom/zrc/ActivityLauncher;
+
+    const-string v1, "needWait"
+
+    invoke-virtual {p1, v1}, Lcom/google/common/collect/ImmutableMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Boolean;
+
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v1
+
+    const-string v2, "type"
+
+    invoke-virtual {p1, v2}, Lcom/google/common/collect/ImmutableMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Integer;
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    invoke-static {v0, v1, p1}, Lus/zoom/zrc/ActivityLauncher;->access$1600(Lus/zoom/zrc/ActivityLauncher;ZI)V
+
+    return-void
+.end method

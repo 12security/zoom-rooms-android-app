@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <us.zoom.zrc.view.ZRCImageView android:layout_gravity="center_vertical" android:id="@id/zrc_back" style="@style/ZRCPortrait.Back" />
+        <TextView android:textSize="17.0sp" android:textColor="#ffcbe7f6" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/meet_now" android:layout_weight="1.0" />
+        <TextView android:textSize="17.0sp" android:textColor="#fff5a623" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/zrc_meeting_now" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:minWidth="48.0dip" android:minHeight="48.0dip" android:text="@string/ok" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/zm_im_selected" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/invite_send_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/invite_send" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/invite_send_bg" android:scaleType="fitXY" />
+            <TextView android:textSize="12.0sp" android:textColor="#fff5a623" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/send" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <us.zoom.zrc.view.ZRCSearchView android:id="@id/zm_im_search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/zm_addrbook_im_list_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/zm_addrbook_im_list" />
+            <us.zoom.zrc.view.DynamicIMContactListView android:id="@id/dynamic_zm_im_list" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="#ff506b85" android:dividerHeight="1.0dip" />
+            <ListView android:id="@id/searchlistview" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="#00000000" />
+            <us.zoom.zrc.view.DynamicImContactSearchListView android:id="@id/dynamic_searchlistview" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

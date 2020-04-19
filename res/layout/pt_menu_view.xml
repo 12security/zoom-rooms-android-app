@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_pt_menu_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zrc_pt_menu_item_margin_top" android:layout_alignParentTop="true">
+        <us.zoom.zrc.view.PTMenuViewItem android:id="@id/iv_meeting_now" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <us.zoom.zrc.view.PTMenuViewItem android:id="@id/iv_meeting_list" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <us.zoom.zrc.view.PTMenuViewItem android:id="@id/iv_join" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <us.zoom.zrc.view.PTMenuViewItem android:id="@id/iv_presentation" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <us.zoom.zrc.view.PTMenuViewItem android:id="@id/iv_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <us.zoom.zrc.view.PTMenuViewItem android:id="@id/iv_control_system" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <us.zoom.zrc.view.PTMenuViewItem android:id="@id/iv_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="ZRCTextView" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/zrc_white</item>
+    </style>
+    <style name="ZRCTextView.Large" parent="@style/ZRCTextView">
+        <item name="android:textSize">45.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ZRCTextView.MeetingInfoLabel" parent="@style/ZRCTextView">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/zrc_black</item>
+    </style>
+    <style name="ZRCTextView.MeetingInfoMsg" parent="@style/ZRCTextView">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/zrc_black</item>
+    </style>
+    <style name="ZRCTextView.MeetingInfoSubTitle" parent="@style/ZRCTextView">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/zrc_black</item>
+    </style>
+    <style name="ZRCTextView.MeetingListTitle" parent="@style/ZRCTextView">
+        <item name="android:textSize">20.0sp</item>
+    </style>
+    <style name="ZRCTextView.Mid" parent="@style/ZRCTextView">
+        <item name="android:textSize">25.0sp</item>
+    </style>
+    <style name="ZRCTextView.Normal" parent="@style/ZRCTextView">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="ZRCTextView.PhoneLabel" parent="@style/ZRCTextView">
+        <item name="android:textSize">22.0sp</item>
+    </style>
+    <style name="ZRCTextView.ShareNormal" parent="@style/ZRCTextView.Normal">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/zrc_black</item>
+    </style>
+    <style name="ZRCTextView.ShareSmall" parent="@style/ZRCTextView">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/zrc_black</item>
+    </style>
+    <style name="ptMenuFont">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/zrc_white</item>
+        <item name="android:maxWidth">100.0dip</item>
+    </style>
+</resources>

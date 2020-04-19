@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:left="@dimen/zrcs_image_param_access_fix_press" android:top="@dimen/zrcs_image_param_access_fix_press" android:right="@dimen/zrcs_image_param_access_fix_press" android:bottom="@dimen/zrcs_image_param_access_fix_press">
+                <shape android:shape="oval">
+                    <stroke android:width="2.0dip" android:color="@color/transparent" />
+                    <solid android:color="@color/zrcs_gray_dark" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_pressed="false">
+        <layer-list>
+            <item android:left="@dimen/zrcs_image_param_access_fix" android:top="@dimen/zrcs_image_param_access_fix" android:right="@dimen/zrcs_image_param_access_fix" android:bottom="@dimen/zrcs_image_param_access_fix">
+                <shape android:shape="oval">
+                    <stroke android:width="2.0dip" android:color="@color/zrcs_line_pre_meeting" />
+                    <solid android:color="@color/transparent" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:textColor="@color/zrc_white" android:gravity="center" android:id="@id/show_details" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:minWidth="48.0dip" android:minHeight="48.0dip" android:text="@string/show_details" android:drawablePadding="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="?android:buttonStyleSmall" />
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/show_details" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_cannot_connect" android:layout_width="wrap_content" android:layout_height="@dimen/login_failed_to_connect_zr_image_height" android:layout_marginTop="20.0dip" android:src="@drawable/connection_issue_cannot_connect" android:contentDescription="@null" />
+            <TextView android:textSize="@dimen/login_failed_to_connect_zr_title_text_size" android:textColor="@color/zrc_white" android:layout_gravity="center_horizontal" android:id="@id/failure_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/connection_failure_title" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/please_contact_it" />
+                <TextView android:textColor="@color/zrc_text_color" android:gravity="start" android:id="@id/connect_failed_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:minWidth="@dimen/login_button_min_height" android:text="@string/retry" />
+            </LinearLayout>
+            <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/ll_contact_way" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" style="@style/ZRCTextView.Mid" />
+            <ScrollView android:layout_gravity="center_horizontal" android:id="@id/scrollView" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_detail" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="35.0dip">
+                    <View android:background="@color/zrc_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="25.0dip" android:layout_marginBottom="25.0dip" />
+                    <TextView android:id="@id/detail_suggestion" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/connection_failure_suggestions" />
+                    <TextView android:id="@id/tv_room_name" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/connection_failure_room_name" />
+                    <TextView android:id="@id/tv_zr_ip_address" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/connection_failure_zp_info" />
+                    <TextView android:id="@id/tv_zrc_ip_address" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/connection_failure_zpc_info" />
+                    <LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:id="@id/tv_zrc_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zpc_version" />
+                        <TextView android:textColor="@color/zrc_text_color" android:id="@id/tv_sign_out" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/sign_out" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

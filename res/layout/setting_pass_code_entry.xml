@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.zoom.zrc.base.widget.RoundedLinearLayout android:orientation="vertical" android:background="@drawable/zrc_round_dialog_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="@dimen/zrc_round_dialog_min_width" app:cornerRadius="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:maxWidth="@dimen/zrc_round_dialog_title_max_width" style="@style/ZMTextView.Large.DialogTitle" />
+    <TextView android:gravity="center" android:id="@id/message_tv" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" style="@style/ZMTextView.Normal.DialogMsg" />
+    <EditText android:id="@id/input_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:singleLine="true" android:inputType="textNoSuggestions|textPassword" android:imeOptions="actionDone|flagNoFullscreen" style="@style/ZMEditText" />
+    <LinearLayout android:background="@color/zm_split_bg" android:paddingTop="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:baselineAligned="false">
+        <us.zoom.zrc.base.widget.ZRCButton android:id="@id/cancel_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="1.0px" android:minWidth="48.0dip" android:minHeight="48.0dip" android:text="@string/cancel" android:maxLines="2" android:layout_weight="1.0" style="@style/ZMButton.Dialog" />
+        <us.zoom.zrc.base.widget.ZRCButton android:id="@id/confirm_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="48.0dip" android:minHeight="48.0dip" android:text="@string/ok" android:maxLines="2" android:layout_weight="1.0" style="@style/ZMButton.Dialog.HappyPath" />
+    </LinearLayout>
+</us.zoom.zrc.base.widget.RoundedLinearLayout>

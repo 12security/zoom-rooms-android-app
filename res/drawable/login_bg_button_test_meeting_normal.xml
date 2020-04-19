@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/zrc_rounded_corner_radius" />
+    <stroke android:width="@dimen/login_button_border_size" android:color="@color/login_color_button_stroke" />
+    <solid android:color="@android:color/transparent" />
+</shape>

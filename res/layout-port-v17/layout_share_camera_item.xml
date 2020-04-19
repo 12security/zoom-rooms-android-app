@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/sc_sharing_cam_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sc_select_icon_iv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:src="@drawable/option_normal" android:contentDescription="@string/selected" android:layout_marginStart="60.0dip" />
+    <TextView android:textSize="@dimen/sc_sharing_cam_item_text_size" android:textColor="#ff123957" android:ellipsize="end" android:id="@id/sc_cam_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:maxWidth="@dimen/sc_cam_name_tv_maxwith" android:singleLine="true" android:layout_marginStart="20.0dip" />
+    <TextView android:textSize="@dimen/sc_cam_selected" android:textStyle="bold" android:textColor="#ff123957" android:id="@id/sc_cam_selected" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/selected" android:singleLine="true" android:layout_marginStart="20.0dip" />
+</LinearLayout>

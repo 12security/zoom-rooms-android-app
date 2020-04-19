@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/mli_margin_start" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/zrc_blue2" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mli_margin_start" android:singleLine="true" />
+    <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/zrc_blue2" android:ellipsize="end" android:id="@id/rlAliasTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mli_margin_start" android:layout_marginTop="4.0dip" android:singleLine="true" android:layout_below="@id/tv_name" />
+</RelativeLayout>

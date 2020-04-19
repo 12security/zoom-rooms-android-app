@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/rename_dialog_bg_shape" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <us.zoom.zrc.view.ZRCTextViewButton android:textSize="14.0sp" android:textColor="@color/zrc_black" android:gravity="center" android:id="@id/wbSavePosTV" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/set_camera_preset" />
+    <View android:background="@color/settings_divider_light" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <us.zoom.zrc.view.ZRCTextViewButton android:textSize="14.0sp" android:textColor="@color/zrc_black" android:gravity="center" android:id="@id/wbRenameTV" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rename" />
+    <View android:id="@id/wbSetDefaultDivider" android:background="@color/settings_divider_light" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <us.zoom.zrc.view.ZRCTextViewButton android:textSize="14.0sp" android:textColor="@color/zrc_black" android:gravity="center" android:id="@id/wbSetDefaultPosTV" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/set_default_camera_preset_position" />
+</LinearLayout>

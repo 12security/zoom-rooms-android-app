@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sc_static_title_text_size" android:textColor="#ff6b6b7f" android:gravity="center" android:id="@id/sc_static_title" android:layout_width="fill_parent" android:layout_height="@dimen/sc_static_title_height" android:text="@string/share_camera_title" />
+    <ListView android:id="@id/sc_cameras_lv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#ff979797" android:dividerHeight="1.0px" android:choiceMode="singleChoice" />
+</LinearLayout>

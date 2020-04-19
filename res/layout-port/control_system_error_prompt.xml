@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/control_system_error" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/zrcs_error" android:scaleType="fitCenter" android:tint="?controlSystemErrorColor" />
+    <TextView android:textSize="20.0sp" android:textColor="?controlSystemErrorColor" android:id="@id/control_system_error_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="32.0dip" android:text="@string/zrcs_error_message" />
+    <TextView android:textSize="12.0sp" android:textColor="?controlSystemErrorColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="32.0dip" android:text="@string/zrcs_prompt" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

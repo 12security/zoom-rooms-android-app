@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/far_end_camera_control_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="@dimen/zrc_dialog_min_width" android:minHeight="@dimen/zrc_dialog_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.zrc.view.ZRCImageView android:id="@id/sc_done_bt" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_btn_clear_search_view" android:scaleType="fitXY" />
+    <TextView android:textSize="24.0sp" android:id="@id/title" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/camera_settings_title" android:layout_below="@id/sc_done_bt" android:layout_centerHorizontal="true" style="@style/ZRCTextView.Black" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/assign_serial_port_ll" android:paddingLeft="@dimen/com_device_list_marginRight" android:paddingRight="@dimen/com_device_list_marginRight" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/com_device_list_marginRight" android:layout_below="@id/title">
+        <TextView android:textSize="20.0sp" android:textColor="#ff0e293f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_settings_serial_port" android:layout_weight="0.8" />
+        <us.zoom.zrc.base.widget.ZRCSwitchButton android:theme="@style/Theme.AppCompat" android:gravity="center_vertical" android:id="@id/assign_serial_port" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.2" zoom:switchMinWidth="30.0dip" style="@style/ZRCSwitchBlueTrack" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/com_device_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/assign_serial_port_ll">
+        <TextView android:textSize="22.0sp" android:id="@id/select_com" android:paddingLeft="@dimen/com_device_list_marginRight" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/com_device_list_marginRight" android:text="@string/camera_settings_com_device" style="@style/ZRCTextView.Black" />
+        <View android:id="@id/divider" android:background="@color/zrc_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <us.zoom.zrc.view.WrapContentListView android:id="@id/source_list" android:background="@color/zrc_settings_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/zrc_gray" android:dividerHeight="0.0dip" />
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

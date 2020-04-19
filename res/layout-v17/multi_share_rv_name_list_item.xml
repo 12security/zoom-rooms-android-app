@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <us.zoom.zrc.view.ZRCTextView android:textSize="@dimen/multi_share_item_textSize" android:textColor="@color/multi_share_item_unchecked" android:id="@id/multi_share_sharing_item" android:paddingTop="@dimen/multi_share_item_padding_TB" android:paddingBottom="@dimen/multi_share_item_padding_TB" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:singleLine="true" android:layout_weight="1.0" android:layout_marginEnd="4.0dip" />
+    <TextView android:gravity="end" android:id="@id/multi_share_item_check_mark" android:background="@drawable/multi_share_sharing_check" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:importantForAccessibility="no" />
+</LinearLayout>

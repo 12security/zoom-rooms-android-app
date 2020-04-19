@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/zrc_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/layout_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sip_call_title_margin_top" app:layout_constraintTop_toTopOf="parent">
+        <us.zoom.zrc.view.ZRCTextViewButton android:textSize="17.0sp" android:textColor="@color/zm_white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_left_action" android:layout_width="wrap_content" android:layout_height="@dimen/accessibility_min_height" android:layout_marginLeft="24.0dip" android:minWidth="@dimen/accessibility_min_height" android:text="@string/cancel" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/zm_white" android:layout_gravity="center" android:id="@id/tv_title_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_call" />
+    </FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/dial_pad_content" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/layout_title">
+        <LinearLayout android:orientation="horizontal" android:id="@id/dial_number_content" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:contentDescription="@string/accessibility_your_ext" android:layout_marginEnd="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent">
+            <TextView android:textColor="#ff95c8e6" android:id="@id/dial_number_first_part" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" />
+            <View android:id="@id/dial_number_divider" android:background="#ccd7e9ff" android:layout_width="1.0dip" android:layout_height="14.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="14.0dip" />
+            <TextView android:textColor="#ff95c8e6" android:id="@id/dial_number_second_part" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <us.zoom.zrc.view.DialKeyboardView android:id="@id/dial_keyboard_view" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/dial_number_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

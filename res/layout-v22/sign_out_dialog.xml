@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/alertTitle" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/sign_out" android:breakStrategy="simple" style="@style/ZMTextView.Large.DialogTitle" />
+    <TextView android:gravity="center|top" android:id="@id/msg" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="24.0dip" android:text="@string/sign_out_tips" style="@style/ZMTextView.Normal.DialogMsg" />
+    <LinearLayout android:orientation="vertical" android:id="@id/buttonPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:divider="@drawable/divider_call_history" android:showDividers="beginning|middle">
+        <Button android:textStyle="bold" android:ellipsize="end" android:gravity="center" android:id="@id/btn1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="48.0dip" android:minHeight="48.0dip" android:text="@string/sign_out" android:maxLines="2" style="@style/ZMButton.Dialog" />
+        <Button android:ellipsize="end" android:gravity="center" android:id="@id/btn2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="48.0dip" android:minHeight="48.0dip" android:text="@string/sign_out_zrc_only" android:maxLines="2" style="@style/ZMButton.Dialog" />
+        <Button android:ellipsize="end" android:gravity="center" android:id="@id/btn3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="48.0dip" android:minHeight="48.0dip" android:text="@string/cancel" android:maxLines="2" style="@style/ZMButton.Dialog" />
+    </LinearLayout>
+</LinearLayout>

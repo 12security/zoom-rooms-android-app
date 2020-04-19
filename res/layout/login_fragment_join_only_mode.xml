@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/content_paired" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/login_fragment_paired_without_login" />
+    <include android:id="@id/content_plan_ended" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/login_fragment_plan_ended" />
+</FrameLayout>

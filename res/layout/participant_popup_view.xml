@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <us.zoom.zrc.view.ParticipantPopupListView android:gravity="center" android:id="@id/list" android:background="@drawable/participants_list_pop_up_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@color/zrc_gray" android:dividerHeight="1.0dip" />
+</ScrollView>

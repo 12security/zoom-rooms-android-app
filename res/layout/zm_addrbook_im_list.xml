@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ExpandableListView android:id="@id/im_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:childIndicator="@null" android:childDivider="#ff506b85" android:divider="#ff506b85" android:dividerHeight="1.0dip" />
+    <us.zoom.zrc.view.SideBar android:layout_gravity="right" android:id="@id/side" android:background="@drawable/zm_quick_search_sidebar" android:layout_width="30.0dip" android:layout_height="fill_parent" />
+    <TextView android:textSize="48.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/txtSearchChar" android:background="@drawable/zm_quick_search_char_bg" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="70.0dip" android:text="A" />
+</FrameLayout>

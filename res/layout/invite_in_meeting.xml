@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zrc_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_title" android:background="@color/zrc_invite_action_bar_color" android:paddingTop="5.0dip" android:paddingRight="20.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/zm_pt_titlebar_height">
+        <ImageView android:id="@id/btnLeft" android:padding="@dimen/zrc_default_enhance_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/up_arrow" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:rotation="270.0" />
+        <us.zoom.zrc.view.TabBar android:id="@id/tabbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/btnLeft" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/fl_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

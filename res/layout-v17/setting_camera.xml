@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?settingsMainStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" android:background="?settingsTitleBackgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content" zoom:zm_leftButton="@id/back_btn" zoom:zm_title="@id/txtTitle" style="@style/ZMTitleBar">
+        <us.zoom.zrc.base.widget.ZRCImageButton android:id="@id/back_btn" android:background="@color/transparent" android:layout_marginLeft="4.0dip" android:layout_marginStart="4.0dip" style="?settingsBackStyle" />
+        <us.zoom.androidlib.widget.ZMDynTextSizeTextView android:textColor="?settingsTextColorPrimary" android:ellipsize="end" android:gravity="center" android:id="@id/txtTitle" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/camera" android:singleLine="true" style="@style/ZMTextView.Title" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <View android:id="@id/title_bottom_line" android:background="?settingsTitleDividerColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <TextView android:textColor="?settingsSubTitleColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/zrc_setting_menu_item_margin" android:text="@string/source" android:textAllCaps="true" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/scroll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:importantForAccessibility="no">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <us.zoom.zrc.view.ZRCSettingsCategory android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?settingsCategoryDevicesStyle">
+                <us.zoom.zrc.view.WrapContentListView android:id="@id/source_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/settings_item_background" android:importantForAccessibility="no" style="?settingsContentListViewStyle" />
+            </us.zoom.zrc.view.ZRCSettingsCategory>
+            <TextView android:textSize="@dimen/settings_menu_text_des_size" android:textColor="?settingsSecondaryColor" android:id="@id/advanced_settings_description" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/zrc_setting_menu_item_margin" android:minHeight="48.0dip" android:text="@string/camera_advanced_setting_description" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

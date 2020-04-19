@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?keypadItemBackground" android:layout_width="@dimen/zrc_number_keyboard_key_width" android:layout_height="@dimen/zrc_number_keyboard_key_width"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/zrc_number_keyboard_item_font_size" android:textColor="?android:textColorPrimary" android:id="@id/tv_number_item" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/zrc_number_keyboard_item_sub_font_size" android:textColor="?android:textColorPrimary" android:id="@id/tv_letters" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_icon" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" android:tint="?android:textColorPrimary" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

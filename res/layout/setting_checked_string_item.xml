@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/settings_item_background" android:layout_width="fill_parent" android:layout_height="@dimen/zrc_setting_menu_item_fixed_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/item_name" android:paddingLeft="16.0dip" android:paddingRight="@dimen/zrc_setting_menu_padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <us.zoom.zrc.view.ZRCTextView android:ellipsize="middle" android:gravity="center|left" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_selected" android:paddingLeft="@dimen/zrc_setting_menu_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="16.0dip" android:src="@drawable/tick" android:scaleType="center" android:contentDescription="@string/selected" />
+</LinearLayout>

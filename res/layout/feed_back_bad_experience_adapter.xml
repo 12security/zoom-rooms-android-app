@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/checkbox" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="@dimen/meeting_feedback_bad_content_mg_left" android:src="@drawable/feedbackcheckbox" android:scaleType="fitXY" android:layout_centerVertical="true" />
+    <TextView android:textSize="15.0sp" android:id="@id/feed_back_reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="sss" android:layout_toRightOf="@id/checkbox" android:layout_centerVertical="true" style="@style/ZMTextView.Small" />
+</RelativeLayout>

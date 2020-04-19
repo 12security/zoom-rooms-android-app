@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="policy_block_unknown_ssl_cert_entries">
+        <item>Padrão</item>
+        <item>Sim</item>
+        <item>Não</item>
+    </string-array>
+</resources>

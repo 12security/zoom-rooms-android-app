@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@drawable/switch_white_thumb_on" />
+    <item android:state_enabled="false" android:state_checked="false" android:drawable="@drawable/switch_white_disable_thumb_off" />
+    <item android:state_enabled="true" android:state_checked="false" android:drawable="@drawable/switch_white_thumb_off" />
+</selector>

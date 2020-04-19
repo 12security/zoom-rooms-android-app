@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <us.zoom.zrc.view.TriangleView android:layout_gravity="center_horizontal" android:id="@id/iv_arrow" android:layout_width="25.0dip" android:layout_height="15.0dip" app:TriangleViewBorderColor="#ffe2e2e2" app:TriangleViewColor="#ffe2e2e2" app:TriangleViewDirection="up" />
+    <us.zoom.zrc.base.widget.RoundedLinearLayout android:orientation="vertical" android:background="@drawable/meeting_info_popup_more_number_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_call_history" android:showDividers="middle" app:cornerRadius="13.0dip">
+        <us.zoom.zrc.view.FixedRowsRecyclerView android:id="@id/recycler_call_history" android:layout_width="fill_parent" android:layout_height="wrap_content" app:dividerHeight="1.0dip" app:maxRows="5" />
+        <Button android:textColor="#ff0e71eb" android:id="@id/btn_clear" android:background="@android:color/transparent" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/meeting_history_item_height" android:text="@string/clear_all_recent_calls" />
+    </us.zoom.zrc.base.widget.RoundedLinearLayout>
+</LinearLayout>

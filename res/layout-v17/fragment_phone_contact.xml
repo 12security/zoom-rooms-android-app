@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/zrc_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/layout_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sip_call_title_margin_top" app:layout_constraintTop_toTopOf="parent">
+        <us.zoom.zrc.view.ZRCTextViewButton android:textSize="17.0sp" android:textColor="@color/zm_white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_left_action" android:layout_width="wrap_content" android:layout_height="@dimen/accessibility_min_height" android:layout_marginLeft="24.0dip" android:text="@string/cancel" android:layout_marginStart="24.0dip" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/zm_white" android:layout_gravity="center" android:id="@id/tv_title_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contacts" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/search_by_contacts_content" android:layout_width="@dimen/login_primary_content_width" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/layout_title">
+        <us.zoom.zrc.login.widget.ZRCListSearchBox android:id="@id/search_box" android:background="@drawable/login_bg_dark_with_corner" android:paddingLeft="@dimen/login_list_padding_horizontal" android:paddingRight="@dimen/login_list_padding_horizontal" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="@dimen/dial_search_box_margin_top" android:paddingStart="@dimen/login_list_padding_horizontal" android:paddingEnd="@dimen/login_list_padding_horizontal" />
+        <us.zoom.zrc.login.widget.ZRCRecyclerListView android:id="@id/contacts_list_view" android:background="@drawable/login_bg_list_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

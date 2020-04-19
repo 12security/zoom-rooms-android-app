@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center" android:id="@id/help_text" android:background="@drawable/shape_round" android:paddingLeft="@dimen/login_help_padding_horizontal" android:paddingRight="@dimen/login_help_padding_horizontal" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_help_padding_vertical" android:lineSpacingMultiplier="1.4" />
+    <FrameLayout android:id="@id/help_content" android:paddingLeft="@dimen/login_help_padding_horizontal" android:paddingRight="@dimen/login_help_padding_horizontal" android:paddingBottom="@dimen/login_help_padding_vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/login_help_padding_vertical" />
+    <us.zoom.zrc.view.ZRCImageView android:id="@id/close_button" android:background="@color/transparent" android:padding="12.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_close" android:scaleType="centerInside" android:contentDescription="@string/close" />
+</FrameLayout>

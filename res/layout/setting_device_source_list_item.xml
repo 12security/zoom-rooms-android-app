@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="@dimen/zrc_setting_menu_item_fixed_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_selected" android:paddingLeft="@dimen/zrc_setting_menu_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@drawable/tick" android:scaleType="center" android:contentDescription="@string/selected" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/iv_see_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/see_more_margin_right" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/iv_selected" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/warningbadge" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/zm_red" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/see_more" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/item_name" android:paddingLeft="16.0dip" android:paddingRight="@dimen/zrc_setting_menu_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/iv_see_more" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <us.zoom.zrc.view.ZRCTextView android:ellipsize="middle" android:gravity="left" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textColor="@color/zm_red" android:id="@id/tv_system_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/alternative_device" style="@style/ZMTextView.ExSmall" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
